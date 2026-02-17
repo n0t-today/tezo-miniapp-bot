@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+.eggs/
+
+# Node / frontend
+node_modules/
+dist/
+.npm
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Конфиги с секретами (не коммитить)
+*.env
+.env.*
+config/local.*
+
+# Логи и БД локально
+logs/
+*.db
+*.sqlite3
+
+# S3 / загрузки (локальные копии)
+uploads/
+
+# telegram-bot-modules (референсная библиотека, в репо не попадает)
+telegram-bot-modules/
