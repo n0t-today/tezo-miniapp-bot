@@ -1,7 +1,7 @@
 # ТЗ: Бэкенд
 
 Отдельный документ с подробным техническим заданием на разработку серверной части.  
-Связанные документы: `TZ.md`, `TZ_Mini_App.md`, `TZ_Web_Admin.md`, `DB_Schema.md`.  
+Связанные документы: общее ТЗ `docs/TZ.md`; Mini App `frontend/miniapp/docs/TZ_Mini_App.md`; Web Admin `frontend/admin/docs/TZ_Web_Admin.md`; схема БД `backend/docs/DB_Schema.md`.  
 Язык интерфейса: русский. Формат дат: dd.mm.yyyy.
 
 ---
@@ -15,7 +15,7 @@
 | **API-сервер** | REST API для мини-приложения и веб-админки; вебхуки (ЮKassa, при необходимости) |
 | **Telegram-бот** | Обработка команд и сообщений; интеграция с API; пересылка в супергруппу |
 | **Интеграции** | Tezo API, ЮKassa, S3, Telegram Bot API |
-| **БД** | PostgreSQL (см. `DB_Schema.md`) |
+| **БД** | PostgreSQL (см. `backend/docs/DB_Schema.md`) |
 | **Очереди/фоновые задачи** | Опционально: Celery, Redis — для отложенных задач (отправка в ТГ, синхронизация) |
 
 ### 1.2 Рекомендуемый стек

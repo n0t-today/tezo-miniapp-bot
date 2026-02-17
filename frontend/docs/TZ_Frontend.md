@@ -1,7 +1,7 @@
 # ТЗ: Фронтенд
 
 Отдельный документ с подробным техническим заданием на разработку клиентской части.  
-Связанные документы: `TZ.md`, `TZ_Mini_App.md`, `TZ_Web_Admin.md`, `TZ_Backend.md`, `DB_Schema.md`.  
+Связанные документы: общее ТЗ `docs/TZ.md`; Mini App `frontend/miniapp/docs/TZ_Mini_App.md`; Web Admin `frontend/admin/docs/TZ_Web_Admin.md`; бэкенд `backend/docs/TZ_Backend.md`; схема БД `backend/docs/DB_Schema.md`.  
 Язык интерфейса: русский. Формат дат: dd.mm.yyyy.
 
 ---
