@@ -8,40 +8,40 @@
 
 ```
 tezo-miniapp-bot/
-├── backend/              # API, Telegram-бот, интеграции (Tezo, ЮKassa, S3)
-│   ├── docs/             # ТЗ бэкенда и схема БД
-│   │   ├── TZ_Backend.md
-│   │   └── DB_Schema.md
-│   └── README.md
+├── backend/          # API, Telegram-бот, интеграции (Tezo, ЮKassa, S3)
 ├── frontend/
-│   ├── docs/             # Общее ТЗ фронтенда
-│   │   └── TZ_Frontend.md
-│   ├── miniapp/          # Telegram Mini App (React)
-│   │   ├── docs/
-│   │   │   └── TZ_Mini_App.md
-│   │   └── README.md
-│   └── admin/            # Веб-админка (React)
-│       ├── docs/
-│       │   └── TZ_Web_Admin.md
-│       └── README.md
-├── docs/                 # Общее ТЗ проекта
-│   ├── TZ.md             # Общее ТЗ
-│   └── README_TZ.md      # Оглавление комплекта ТЗ
-└── README.md             # этот файл
+│   ├── miniapp/     # Telegram Mini App (React)
+│   └── admin/       # Веб-админка (React)
+├── docs/            # ТЗ и схема БД
+│   ├── TZ.md
+│   ├── README_TZ.md
+│   ├── TZ_Backend.md
+│   ├── TZ_Frontend.md
+│   ├── TZ_Mini_App.md
+│   ├── TZ_Web_Admin.md
+│   └── DB_Schema.md
+└── README.md        # этот файл
 ```
 
 ---
 
 ## Документация
 
-ТЗ распределены по компонентам проекта:
+Вся техническая документация — в папке **docs/**.
 
-- **docs/README_TZ.md** — оглавление комплекта ТЗ и порядок изучения.
+- **docs/README_TZ.md** — оглавление комплекта ТЗ.
 - **docs/TZ.md** — общее ТЗ проекта.
-- **backend/docs/** — ТЗ бэкенда и схема БД PostgreSQL.
-- **frontend/docs/** — общее ТЗ фронтенда.
-- **frontend/miniapp/docs/** — ТЗ мини-приложения.
-- **frontend/admin/docs/** — ТЗ веб-админки.
+- **docs/DB_Schema.md** — схема базы данных PostgreSQL.
+
+### Порядок изучения ТЗ
+
+1. **docs/TZ.md** — общее понимание проекта.
+2. **docs/DB_Schema.md** — структура данных.
+3. **docs/TZ_Backend.md** — серверная часть и API.
+4. **docs/TZ_Frontend.md** — клиентская часть.
+5. **docs/TZ_Mini_App.md** и **docs/TZ_Web_Admin.md** — детали экранов и страниц.
+
+В конце каждого документа указан переход к следующему.
 
 ---
 

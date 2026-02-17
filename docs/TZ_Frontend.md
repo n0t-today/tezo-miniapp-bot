@@ -1,7 +1,7 @@
 # ТЗ: Фронтенд
 
 Отдельный документ с подробным техническим заданием на разработку клиентской части.  
-Связанные документы: общее ТЗ `docs/TZ.md`; Mini App `frontend/miniapp/docs/TZ_Mini_App.md`; Web Admin `frontend/admin/docs/TZ_Web_Admin.md`; бэкенд `backend/docs/TZ_Backend.md`; схема БД `backend/docs/DB_Schema.md`.  
+Связанные документы: `TZ.md`, `TZ_Mini_App.md`, `TZ_Web_Admin.md`, `TZ_Backend.md`, `DB_Schema.md` (в этой же папке docs/).  
 Язык интерфейса: русский. Формат дат: dd.mm.yyyy.
 
 ---
@@ -204,3 +204,7 @@ VITE_API_BASE_URL=https://api.example.com
 ```
 
 Секреты (JWT, ключи) не хранить во фронтенде. Авторизация — через бэкенд.
+
+---
+
+**Перейти к следующему документу:** `TZ_Mini_App.md` — страницы мини-приложения (затем `TZ_Web_Admin.md` — веб-админка).

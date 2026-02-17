@@ -1,7 +1,7 @@
 # Схема базы данных
 
 Отдельный документ с описанием структуры БД.  
-Связанные документы: общее ТЗ `docs/TZ.md`; ТЗ бэкенда `backend/docs/TZ_Backend.md`.  
+Связанные документы: `TZ.md`, `TZ_Backend.md` (в этой же папке docs/).  
 СУБД: PostgreSQL.
 
 ---
@@ -345,3 +345,7 @@ admin_users ── roles (веб-админка)
 - Инструмент: **Alembic** (или аналог).
 - Порядок создания таблиц: users, tezo_bindings, products, product_sizes, product_images, raffles, raffle_prizes, raffle_prize_sizes, promo_codes, cart_items, orders, order_items, appeal_categories, appeals, appeal_messages, admins, roles, admin_users, raffle_spins_log.
 - Сидовые данные: `appeal_categories` (категории), `admins` (7533811917), `roles` (суперадмин), первый `admin_user` и `raffle` при первом запуске.
+
+---
+
+**Перейти к следующему документу:** `TZ_Backend.md` — ТЗ бэкенда (API, интеграции).
