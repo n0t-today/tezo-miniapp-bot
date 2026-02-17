@@ -33,23 +33,22 @@
 
 ---
 
-### 2.2 tezo_bindings — привязка Tezo
+### 2.2 prime_hill_bindings — привязка Prime Hill
 
-Связь пользователя с аккаунтом Tezo (карта или телефон).
+Связь пользователя с аккаунтом Prime Hill (карта или телефон).
 
 | Поле | Тип | Описание |
 |------|-----|----------|
 | id | BIGSERIAL | PK |
 | user_id | BIGINT | FK → users.id |
-| tezo_type | VARCHAR(20) | 'card' \| 'phone' |
-| tezo_value | VARCHAR(100) | Номер карты или телефона (зашифровано/хеш при необходимости) |
-| tezo_account_id | VARCHAR(255) | ID аккаунта в системе Tezo (nullable, если API не возвращает) |
+| binding_type | VARCHAR(20) | 'card' \| 'phone' |
+| binding_value | VARCHAR(100) | Номер карты или телефона (как в Loyalty API) |
+| client_id | BIGINT | ID клиента в системе Prime Hill (ClientId) |
 | created_at | TIMESTAMPTZ | |
 | updated_at | TIMESTAMPTZ | |
 
-**Ограничения:** один активный binding на пользователя (UNIQUE user_id при логике «одна привязка»). При отвязке — удаление или `unbound_at`.
-
-**Индексы:** `user_id`, `tezo_value` (для поиска дублей).
+**Ограничения:** один активный binding на пользователя (UNIQUE user_id).
+**Индексы:** `user_id`, `binding_value` (для поиска дублей), `client_id`.
 
 ---
 
@@ -323,7 +322,7 @@
 ## 3. Диаграмма связей (кратко)
 
 ```
-users ──┬── tezo_bindings
+users ──┬── prime_hill_bindings
         ├── cart_items ── products, raffle_prizes, promo_codes
         ├── orders ── order_items ── products, raffle_prizes, promo_codes
         ├── appeals ── appeal_messages
@@ -343,7 +342,7 @@ admin_users ── roles (веб-админка)
 ## 4. Миграции
 
 - Инструмент: **Alembic** (или аналог).
-- Порядок создания таблиц: users, tezo_bindings, products, product_sizes, product_images, raffles, raffle_prizes, raffle_prize_sizes, promo_codes, cart_items, orders, order_items, appeal_categories, appeals, appeal_messages, admins, roles, admin_users, raffle_spins_log.
+- Порядок создания таблиц: users, prime_hill_bindings, products, product_sizes, product_images, raffles, raffle_prizes, raffle_prize_sizes, promo_codes, cart_items, orders, order_items, appeal_categories, appeals, appeal_messages, admins, roles, admin_users, raffle_spins_log.
 - Сидовые данные: `appeal_categories` (категории), `admins` (7533811917), `roles` (суперадмин), первый `admin_user` и `raffle` при первом запуске.
 
 ---

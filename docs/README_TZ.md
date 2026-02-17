@@ -1,4 +1,4 @@
-# Комплект ТЗ: Telegram-бот с мини-приложением (Tezo, розыгрыш, магазин)
+# Комплект ТЗ: Telegram-бот с мини-приложением (Prime Hill, розыгрыш, магазин)
 
 Полноценный комплект технической документации для разработки проекта.  
 Дата: 17.02.2025. Язык: русский. Формат дат: dd.mm.yyyy.
@@ -12,7 +12,7 @@
 | **TZ.md** | Общее ТЗ: цели, Telegram-бот, мини-приложение, веб-админка, интеграции, логика розыгрыша |
 | **TZ_Mini_App.md** | Подробное описание страниц мини-приложения (React): авторизация, розыгрыш, магазин, корзина, оформление |
 | **TZ_Web_Admin.md** | Подробное описание страниц веб-админки: Магазин, Розыгрыш, Заказы, Обращения, Пользователи и роли |
-| **TZ_Backend.md** | ТЗ бэкенда: API для Mini App и Web Admin, Telegram-бот, интеграции (Tezo, ЮKassa, S3), логирование |
+| **TZ_Backend.md** | ТЗ бэкенда: API для Mini App и Web Admin, Telegram-бот, интеграции (Prime Hill, ЮKassa, S3), логирование |
 | **TZ_Frontend.md** | ТЗ фронтенда: стек (React, TypeScript, Vite), структура Mini App и Web Admin, маршруты, компоненты |
 | **DB_Schema.md** | Схема БД PostgreSQL: таблицы, поля, связи, индексы |
 
@@ -37,7 +37,7 @@
 | Web Admin | React, TypeScript, Vite |
 | БД | PostgreSQL |
 | Хранилище изображений | S3 |
-| Интеграции | Tezo API, ЮKassa, Telegram Bot API |
+| Интеграции | Prime Hill API (loyaltyAPI + openAPI), ЮKassa, Telegram Bot API |
 
 ---
 

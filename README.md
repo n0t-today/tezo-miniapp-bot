@@ -1,4 +1,4 @@
-# Проект: Telegram-бот с мини-приложением (Tezo, розыгрыш, магазин)
+# Проект: Telegram-бот с мини-приложением (Prime Hill, розыгрыш, магазин)
 
 Общая директория проекта. Структура по логикам: бэкенд, фронтенд (мини-приложение и веб-админка), документация.
 
@@ -8,7 +8,7 @@
 
 ```
 tezo-miniapp-bot/
-├── backend/          # API, Telegram-бот, интеграции (Tezo, ЮKassa, S3)
+├── backend/          # API, Telegram-бот, интеграции (Prime Hill, ЮKassa, S3)
 ├── frontend/
 │   ├── miniapp/     # Telegram Mini App (React)
 │   └── admin/       # Веб-админка (React)
@@ -49,7 +49,7 @@ tezo-miniapp-bot/
 
 | Компонент | Путь | Назначение |
 |-----------|------|------------|
-| Backend | `backend/` | REST API, Telegram-бот, Tezo, ЮKassa, S3 |
+| Backend | `backend/` | REST API, Telegram-бот, Prime Hill, ЮKassa, S3 |
 | Mini App | `frontend/miniapp/` | Розыгрыш, магазин, корзина для пользователей |
 | Web Admin | `frontend/admin/` | Управление товарами, розыгрышами, заказами, обращениями |
 

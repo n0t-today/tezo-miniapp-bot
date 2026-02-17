@@ -37,3 +37,7 @@ uploads/
 
 # telegram-bot-modules (референсная библиотека, в репо не попадает)
 telegram-bot-modules/
+
+# Ignore STITCH files
+frontend/miniapp/STITCH.md
+frontend/admin/STITCH.md
