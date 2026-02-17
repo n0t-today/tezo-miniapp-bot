@@ -41,3 +41,9 @@ telegram-bot-modules/
 # Ignore STITCH files
 frontend/miniapp/STITCH.md
 frontend/admin/STITCH.md
+
+# Removed from git for client view
+docs/DB_Schema.md
+docs/TZ_Backend.md
+docs/TZ_Frontend.md
+docs/README_TZ.md
